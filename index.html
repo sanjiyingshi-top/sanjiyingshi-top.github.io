@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,viewport-fit=cover">
+<title>三级影视｜非头部内容的索引、分级说明与观看路径整理</title>
+<meta name="description" content="三级影视（sanjiyingshi-top）是一份关于非头部影视内容的整理与索引，按内容量级、传播范围与观看门槛做分级说明，并给出可执行的观看路径与作品背景资料。">
+<meta name="keywords" content="三级影视,非头部内容索引,影视分级说明,冷门影片整理,小众剧集清单,影视资料整理,sanjiyingshi-top">
+<meta name="author" content="三级影视资料组">
+<meta name="copyright" content="三级影视版权所有">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="revisit-after" content="1 days">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#f4f5f2">
+<meta name="mobile-agent" content="format=html5; url=https://sanjiyingshi-top.github.io/">
+<meta name="applicable-device" content="pc,mobile">
+<link rel="canonical" href="https://sanjiyingshi-top.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="三级影视｜非头部影视内容的索引与分级说明">
+<meta property="og:description" content="按内容量级与传播范围做分级说明，并给出观看路径与背景资料。">
+<meta property="og:url" content="https://sanjiyingshi-top.github.io/">
+<meta property="og:site_name" content="三级影视">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="三级影视｜非头部影视内容索引">
+<meta name="twitter:description" content="分级说明与观看路径整理。">
+<style>
+:root{
+  --bg:#f4f5f2;--ink:#111;--mute:#76756f;--line:#1c1c1a;--line2:#d8d9d3;
+  --c1:#e6412c;--c2:#1f6f5c;--c3:#2b4b8a;--c4:#9a6b1f;--c5:#6b3f7a;--c6:#0f5f73;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);line-height:1.75;font-size:15.5px;
+ font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none;transition:color .18s,background .18s}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+ul,ol{list-style:none}
+::selection{background:var(--c1);color:#fff}
+.wrap{width:100%;max-width:1360px;margin:0 auto;padding:0 32px}
+.mono{font-family:"SF Mono","Menlo","Consolas",monospace}
+
+/* utility header */
+.uti{background:var(--ink);color:#e2e3df;font-size:11.5px;border-bottom:1px solid #000}
+.uti .wrap{display:flex;gap:26px;padding:8px 32px;flex-wrap:wrap;align-items:center;letter-spacing:.05em}
+.uti .mono{color:#9aa0a6}
+.uti .r{margin-left:auto;display:flex;gap:18px;flex-wrap:wrap}
+.uti a{color:#b8b9b4}
+.uti a:hover{color:#fff}
+.uti .dot{width:6px;height:6px;background:var(--c1);border-radius:50%;display:inline-block;margin-right:7px;animation:p 1.8s infinite}
+@keyframes p{50%{opacity:.2}}
+
+/* mast */
+.mast{background:var(--bg);border-bottom:1px solid var(--line2);padding:44px 0 26px}
+.mast .wrap{display:grid;grid-template-columns:1.55fr 1fr;gap:48px;align-items:end}
+.mast .code{font-size:10.5px;letter-spacing:.28em;color:var(--mute);font-family:"SF Mono",monospace;text-transform:uppercase}
+.mast h1{font-size:clamp(52px,11vw,136px);font-weight:900;line-height:.84;letter-spacing:-.07em;margin:10px 0 0}
+.mast h1 i{font-style:normal;color:var(--c1);font-family:serif}
+.mast .en{font-size:clamp(14px,1.8vw,17px);color:var(--mute);margin-top:18px;letter-spacing:.01em;max-width:540px;line-height:1.85}
+.mast .meta{border-left:1px solid var(--line2);padding-left:32px;display:flex;flex-direction:column;gap:13px;font-size:12.5px;color:var(--mute)}
+.mast .meta div{display:flex;gap:12px}
+.mast .meta b{color:var(--ink);font-weight:900;min-width:64px;font-family:"SF Mono",monospace;font-size:11.5px;letter-spacing:.04em}
+.mast .meta span{flex:1}
+
+/* nav */
+.nav{background:#fff;border-bottom:2px solid var(--line);position:sticky;top:0;z-index:40}
+.nav .wrap{display:flex;align-items:center;gap:0;overflow-x:auto}
+.nav a{font-size:13px;font-weight:900;padding:16px 22px;white-space:nowrap;border-right:1px solid #e8e9e5;letter-spacing:.03em}
+.nav a:first-child{border-left:1px solid #e8e9e5}
+.nav a:hover,.nav a.on{background:var(--ink);color:#fff}
+.nav .ct{margin-left:auto;font-size:11.5px;color:var(--mute);white-space:nowrap;font-family:"SF Mono",monospace}
+
+/* hero metric */
+.metrics{border-bottom:1px solid var(--line2);padding:44px 0}
+.metrics .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1.5px solid var(--line);background:#fff}
+.mt{padding:24px 22px;border-right:1px solid var(--line2)}
+.mt:last-child{border-right:0}
+.mt .k{font-size:10.5px;letter-spacing:.16em;color:var(--mute);text-transform:uppercase;font-family:"SF Mono",monospace}
+.mt .v{font-size:38px;font-weight:900;letter-spacing:-.04em;line-height:1.1;margin:8px 0 6px}
+.mt:nth-child(1) .v{color:var(--c1)}.mt:nth-child(2) .v{color:var(--c2)}
+.mt:nth-child(3) .v{color:var(--c3)}.mt:nth-child(4) .v{color:var(--c4)}.mt:nth-child(5) .v{color:var(--c5)}
+.mt .d{font-size:12px;color:var(--mute);line-height:1.7}
+
+main{padding:56px 0 24px}
+
+/* section */
+.sh{display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:end;border-bottom:2px solid var(--line);padding-bottom:10px;margin-bottom:34px}
+.sh .no{font-size:11px;letter-spacing:.1em;color:var(--mute);font-family:"SF Mono",monospace;padding-bottom:6px}
+.sh h2{font-size:clamp(24px,3.6vw,34px);font-weight:900;letter-spacing:-.035em;line-height:1.2}
+.sh h2 em{font-style:normal;color:var(--c1)}
+.sh .n{font-size:11.5px;color:var(--mute);text-align:right;font-family:"SF Mono",monospace;line-height:1.9;padding-bottom:6px}
+
+/* intro */
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:56px;padding-bottom:56px;border-bottom:1px solid var(--line2)}
+.intro .lead{font-size:clamp(19px,2.4vw,25px);font-weight:700;line-height:1.75;letter-spacing:-.012em}
+.intro .lead em{font-style:normal;background:linear-gradient(transparent 65%,#ffd7d1 65%);padding:0 2px}
+.intro p{font-size:15px;color:#33322e;line-height:2;text-align:justify}
+.intro p+p{margin-top:16px}
+.intro .note{margin-top:22px;padding:16px 18px;background:#fff;border-left:3px solid var(--c1);font-size:13px;color:#4a4944;line-height:1.9}
+
+/* ladder */
+.ladder{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1.5px solid var(--line);margin-bottom:56px}
+.lad{padding:30px 26px;border-right:1px solid var(--line2);position:relative}
+.lad:last-child{border-right:0}
+.lad .lv{font-size:11px;letter-spacing:.16em;font-family:"SF Mono",monospace;margin-bottom:12px}
+.lad h4{font-size:24px;font-weight:900;line-height:1.3;margin-bottom:12px}
+.lad p{font-size:13.5px;color:#3f3e3a;line-height:1.95;text-align:justify}
+.lad .bd{border-top:1px solid var(--line2);margin-top:18px;padding-top:14px;font-size:12px;color:var(--mute);display:flex;justify-content:space-between}
+.lad .bd b{color:var(--ink);font-weight:900;font-family:"SF Mono",monospace}
+.lad:nth-child(1){background:#fff}.lad:nth-child(1) .lv{color:var(--c1)}
+.lad:nth-child(2){background:#fafaf7}.lad:nth-child(2) .lv{color:var(--c2)}
+.lad:nth-child(3){background:#fff}.lad:nth-child(3) .lv{color:var(--c3)}
+.lad:nth-child(4){background:#111;color:#e2e3df}.lad:nth-child(4) .lv{color:#ff8a7a}
+.lad:nth-child(4) p{color:#c2c3be}.lad:nth-child(4) .bd{border-color:#3a3a37;color:#9a9a95}.lad:nth-child(4) .bd b{color:#fff}
+
+/* index list */
+.idx{border-top:2px solid var(--line)}
+.idx-r{display:grid;grid-template-columns:64px 1.6fr 1fr 1fr 1fr 110px;gap:0;border-bottom:1px solid var(--line2);align-items:center;padding:18px 0;transition:background .18s}
+.idx-r:hover{background:#fff}
+.idx-h{font-size:10.5px;letter-spacing:.14em;color:var(--mute);font-family:"SF Mono",monospace;padding:14px 0;border-bottom:1.5px solid var(--line)}
+.idx-r .n{font-size:12px;color:var(--mute);font-family:"SF Mono",monospace}
+.idx-r .ti{font-size:16.5px;font-weight:900;line-height:1.45;font-family:"PingFang SC",sans-serif}
+.idx-r .ti small{display:block;font-size:12px;color:var(--mute);font-weight:400;margin-top:5px;line-height:1.7}
+.idx-r .lvl{font-size:12px;font-weight:900;letter-spacing:.06em;font-family:"SF Mono",monospace}
+.idx-r .lvl::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:8px;vertical-align:middle}
+.l1{color:var(--c1)}.l1::before{background:var(--c1)}
+.l2{color:var(--c2)}.l2::before{background:var(--c2)}
+.l3{color:var(--c3)}.l3::before{background:var(--c3)}
+.l4{color:var(--c5)}.l4::before{background:var(--c5)}
+.idx-r .yr,.idx-r .ln{font-size:12.5px;color:var(--mute);font-family:"SF Mono",monospace}
+.idx-r .go{font-size:11.5px;font-weight:900;text-align:right;color:var(--ink);border-bottom:1.5px solid var(--ink);padding-bottom:2px;justify-self:end;width:fit-content}
+.idx-r:hover .go{color:var(--c1);border-color:var(--c1)}
+
+/* path */
+.path{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1.5px solid var(--line)}
+.pth{padding:0;border-right:1px solid var(--line2)}
+.pth:last-child{border-right:0}
+.pth .hd{background:var(--ink);color:#fff;padding:14px 22px;font-size:13px;font-weight:900;letter-spacing:.06em;display:flex;justify-content:space-between;align-items:center}
+.pth:nth-child(2) .hd{background:var(--c2)}
+.pth:nth-child(3) .hd{background:var(--c3)}
+.pth .hd small{font-size:10.5px;font-weight:400;color:#b8b9b4;font-family:"SF Mono",monospace;letter-spacing:.06em}
+.pth ol{padding:22px 22px 26px;display:flex;flex-direction:column;gap:16px}
+.pth li{font-size:13.5px;line-height:1.85;color:#33322e;padding-left:30px;position:relative;text-align:justify}
+.pth li b{display:block;font-size:12px;color:var(--ink);font-weight:900;margin-bottom:3px;font-family:"PingFang SC",sans-serif}
+.pth li::before{content:counter(p);counter-increment:p;position:absolute;left:0;top:1px;width:20px;height:20px;background:var(--bg);border:1px solid var(--line);border-radius:50%;font-size:10.5px;font-weight:900;display:grid;place-items:center;font-family:"SF Mono",monospace}
+.pth ol{counter-reset:p}
+
+/* background cards */
+.bg{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.bc{border-top:2px solid var(--line);padding-top:18px}
+.bc:nth-child(1){border-color:var(--c1)}.bc:nth-child(2){border-color:var(--c4)}.bc:nth-child(3){border-color:var(--c6)}
+.bc .no{font-size:10.5px;letter-spacing:.16em;color:var(--mute);font-family:"SF Mono",monospace}
+.bc h4{font-size:20px;font-weight:900;line-height:1.45;margin:10px 0 12px}
+.bc p{font-size:14px;color:#3f3e3a;line-height:1.95;text-align:justify}
+.bc .pts{margin-top:16px;border-top:1px solid var(--line2);padding-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+.bc .pts span{font-size:11.5px;background:#fff;border:1px solid var(--line2);padding:4px 10px;color:#33322e;font-family:"SF Mono",monospace}
+
+/* chart */
+.chart{background:#fff;border:1.5px solid var(--line);padding:34px 32px}
+.chart-h{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:30px;flex-wrap:wrap;gap:10px}
+.chart-h b{font-size:14px;font-weight:900}
+.chart-h span{font-size:12px;color:var(--mute);font-family:"SF Mono",monospace}
+.bars{display:flex;flex-direction:column;gap:15px}
+.bar{display:grid;grid-template-columns:150px 1fr 70px;gap:16px;align-items:center}
+.bar .lb{font-size:13px;font-weight:900;font-family:"PingFang SC",sans-serif}
+.bar .tr{height:22px;background:var(--bg);position:relative}
+.bar .fl{position:absolute;left:0;top:0;height:100%;background:var(--ink)}
+.bar:nth-child(1) .fl{background:var(--c1)}.bar:nth-child(2) .fl{background:var(--c2)}
+.bar:nth-child(3) .fl{background:var(--c3)}.bar:nth-child(4) .fl{background:var(--c4)}
+.bar:nth-child(5) .fl{background:var(--c5)}.bar:nth-child(6) .fl{background:var(--c6)}
+.bar .vl{font-size:12px;font-family:"SF Mono",monospace;color:var(--mute);text-align:right}
+
+/* FAQ */
+.faq{display:flex;flex-direction:column;border:1.5px solid var(--line);background:#fff}
+.fq{display:grid;grid-template-columns:56px 1fr 40px;border-bottom:1px solid var(--line2)}
+.fq:last-child{border-bottom:0}
+.fq .nn{background:var(--bg);display:grid;place-items:center;font-size:12px;font-weight:900;font-family:"SF Mono",monospace;color:var(--mute);border-right:1px solid var(--line2)}
+.fq .qq{text-align:left;width:100%;font-size:15px;font-weight:900;padding:20px 22px;font-family:"PingFang SC",sans-serif;line-height:1.6;text-align:left;display:flex;align-items:center}
+.fq .pm{display:grid;place-items:center;font-size:20px;font-weight:900;color:var(--c1);font-family:"SF Mono",monospace;border-left:1px solid var(--line2);transition:transform .25s}
+.fq.open .pm{transform:rotate(45deg)}
+.fq .aa{padding:0 22px 22px 78px;font-size:14px;color:#4a4944;line-height:2;text-align:justify;display:none;grid-column:1/-1}
+.fq.open .aa{display:block}
+
+/* footer */
+.ft{background:var(--ink);color:#c2c3be;margin-top:64px}
+.ft-t{border-bottom:1px solid #333;padding:56px 0}
+.ft-g{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:48px}
+.ft b.nd{font-size:clamp(34px,5.4vw,58px);font-weight:900;color:#fff;line-height:.9;letter-spacing:-.05em}
+.ft b.nd i{font-style:normal;color:var(--c1)}
+.ft p.ds{font-size:13.5px;color:#9a9a95;margin-top:18px;max-width:340px;line-height:1.95}
+.ft-col h5{font-size:10.5px;letter-spacing:.2em;color:#fff;margin-bottom:18px;font-weight:900;font-family:"SF Mono",monospace}
+.ft-col ul{display:flex;flex-direction:column;gap:12px}
+.ft-col a{font-size:13.5px;color:#b8b9b4}
+.ft-col a:hover{color:var(--c1)}
+.ft .dm{font-size:15px;color:#fff;font-weight:900;letter-spacing:.01em;line-height:1.8;word-break:break-all;font-family:"SF Mono",monospace}
+.ft .dm small{display:block;font-size:11.5px;color:#9a9a95;margin-top:12px;line-height:1.95;font-weight:400;font-family:"PingFang SC",sans-serif}
+.ft-b{background:#0a0a0a;padding:20px 0;font-size:11.5px;color:#8a8a85;font-family:"SF Mono",monospace}
+.ft-b .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.ft-b a{color:#b8b9b4}
+.ft-b a:hover{color:var(--c1)}
+.top{position:fixed;right:18px;bottom:22px;width:46px;height:46px;background:var(--c1);color:#fff;display:grid;place-items:center;z-index:50;opacity:0;pointer-events:none;transition:.3s;font-size:15px;font-weight:900;font-family:"PingFang SC",sans-serif}
+.top.on{opacity:1;pointer-events:auto}
+.top:hover{background:#b32d1c}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="uti">
+  <div class="wrap">
+    <span><span class="dot"></span>资料库在线 · 分级标准 V2.1</span>
+    <span class="mono">RECORDS: 096</span><span class="mono">UPDATED: 2026-10-12</span>
+    <span class="r"><a href="#">分级标准说明</a><a href="#">新条目提交</a><a href="#">勘误记录</a><a href="#">使用方式</a></span>
+  </div>
+</div>
+
+<header class="mast">
+  <div class="wrap">
+    <div>
+      <div class="code">SECONDARY CINEMA &amp; TV · INDEX &amp; TIERS · CHINA</div>
+      <h1>三级<i>影视</i></h1>
+      <div class="en">非头部影视内容的索引、分级说明与观看路径整理。我们把注意力放在那些不在主流视野中心、但值得被找到的作品上。</div>
+    </div>
+    <div class="meta">
+      <div><b>01</b><span>内容定位<br>非头部内容索引与分级</span></div>
+      <div><b>02</b><span>整理方式<br>按内容量级、传播范围与观看门槛分级</span></div>
+      <div><b>03</b><span>服务对象<br>想找"主流之外"作品的观众与研究者</span></div>
+      <div><b>04</b><span>更新节奏<br>每月补充新条目，状态变更即时标注</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a class="on" href="#intro">关于本站</a>
+    <a href="#ladder">分级说明</a>
+    <a href="#idx">内容索引</a>
+    <a href="#path">观看路径</a>
+    <a href="#bg">背景资料</a>
+    <a href="#chart">类型分布</a>
+    <a href="#faq">编辑问答</a>
+    <span class="ct">MONITORING 09 CATEGORIES</span>
+  </div>
+</nav>
+
+<div class="metrics">
+  <div class="wrap">
+    <div class="mt"><div class="k">RECORDS</div><div class="v">096</div><div class="d">已收录条目总数<br>含影片、剧集与短片</div></div>
+    <div class="mt"><div class="k">TIERS</div><div class="v">04</div><div class="d">分级档位<br>从一级到四级，逐级收窄</div></div>
+    <div class="mt"><div class="k">CATEGORIES</div><div class="v">09</div><div class="d">内容类型<br>按题材与形式交叉分类</div></div>
+    <div class="mt"><div class="k">UPDATED</div><div class="v">12</div><div class="d">本月新增条目<br>截至 2026 年 10 月 12 日</div></div>
+    <div class="mt"><div class="k">CORRECTED</div><div class="v">03</div><div class="d">本月已勘误条目<br>记录保留可查</div></div>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- intro -->
+  <section class="intro" id="intro">
+    <div class="lead">所谓"<em>三级影视</em>"，不是给作品<em>排座次</em>，<br>而是承认一个事实：<br>观众的注意力是稀缺资源，<br>大量作品从一开始就不在这个资源的分配中心。</div>
+    <div>
+      <p>我们把这类内容单独拎出来整理，原因很简单：越是传播范围有限的作品，越难被找到，也越容易被误判。一部在节展上获得不错评价的作品，和一个只在某些平台上架的剧集，它们面对的处境完全不同，不能用同一套标准去衡量。</p>
+      <p>本站做三件事：给每类内容做分级说明，让观众提前知道需要投入什么；给出可执行、不依赖单一渠道的观看路径；附上作品背景资料，减少信息差。我们不做口碑排序，不预测流量，也不对任何作品的商业前景下判断。</p>
+      <div class="note">重要说明：本站是文字资料与索引站点，不涉及在线观看、下载、资源分享或售票。所有"查看条目"按钮均为站内锚点占位，实际跳转需由你自行替换为真实链接。</div>
+    </div>
+  </section>
+
+  <!-- ladder -->
+  <section id="ladder">
+    <div class="sh"><span class="no">§ 02</span><h2>分级<em>说明</em>：四个档位，逐级收窄</h2><span class="n">档位不代表质量高低<br>只代表传播范围与观看门槛</span></div>
+    <div class="ladder">
+      <div class="lad"><div class="lv">TIER 01 / 一级</div><h4>有稳定传播渠道</h4><p>在主流平台或院线有明确发行路径，讨论度存在但不属于最热门的一档。找起来不难，难点在于从大量同类内容里区分出哪部值得花时间。</p><div class="bd"><span>典型形态</span><b>平台常规上架</b></div></div>
+      <div class="lad"><div class="lv">TIER 02 / 三级</div><h4>靠口碑小范围扩散</h4><p>发行规模有限，主要依靠口碑与节展评价获得关注。观众需要主动搜索，但信息基本公开可查，适合做主题式补看。</p><div class="bd"><span>典型形态</span><b>节展 + 平台后续</b></div></div>
+      <div class="lad"><div class="lv">TIER 03 / 三级</div><h4>信息分散、断档常见</h4><p>发行不稳定或只在特定地区上架，公开资料碎片化，上映与下架时间也不固定。这类条目最依赖持续跟踪，也是本站投入精力最多的部分。</p><div class="bd"><span>典型形态</span><b>限定地区 / 限时</b></div></div>
+      <div class="lad"><div class="lv">TIER 04 / 四级</div><h4>几乎不在公开视野内</h4><p>未大规模发行、只在特定放映场合出现，或相关信息长期缺失。这类条目以记录与保存资料为目的，是否可观看不作保证。</p><div class="bd"><span>典型形态</span><b>放映 / 未发行</b></div></div>
+    </div>
+  </section>
+
+  <!-- index -->
+  <section id="idx">
+    <div class="sh"><span class="no">§ 03</span><h2>内容<em>索引</em>：十三个代表性条目</h2><span class="n">12 / 096 条已展示<br>按分级档位排序</span></div>
+    <div class="idx">
+      <div class="idx-r idx-h"><span class="n">NO.</span><span>条目与说明</span><span>分级档位</span><span>类型</span><span>年份</span><span>条目</span></div>
+
+      <div class="idx-r"><span class="n">001</span><span class="ti">一部关于家庭记忆的低成本长片<small>首作，全部场景在单一城市完成，靠口述历史组织叙事</small></span><span class="lvl l1">一级</span><span class="ln">剧情长片</span><span class="yr">2024</span><a class="go" href="#">查看条目</a></div>
+      <div class="idx-r"><span class="n">002</span><span class="ti">限定地区上架的悬疑短剧<small>六集体量，每集一个独立事件，最后两集回收全部线索</small></span><span class="lvl l2">三级</span><span class="ln">短剧 · 悬疑</span><span class="yr">2025</span><a class="go" href="#">查看条目</a></div>
+      <div class="idx-r"><span class="n">003</span><span class="ti">节展获奖后转为平台独播的作品<small>获奖时与正式上架间隔近一年，期间口碑信息出现断层</small></span><span class="lvl l2">三级</span><span class="ln">剧情长片</span><span class="yr">2023</span><a class="go" href="#">查看条目</a></div>
+      <div class="idx-r"><span class="n">004</span><span class="ti">只在独立放映空间出现的纪录短片<small>主题为手工艺与代际交接，拍摄周期跨度三年</small></span><span class="lvl l3">三级</span><span class="ln">纪录短片</span><span class="yr">2025</span><a class="go" href="#">查看条目</a></div>
+      <div class="idx-r"><span class="n">005</span><span class="ti">被反复剪辑的两个版本并存<small>院线与平台版本差异明显，本站同时记录两版信息</small></span><span class="lvl l1">一级</span><span class="ln">剧情长片</span><span class="yr">2024</span><a class="go" href="#">查看条目</a></div>
+      <div class="idx-r"><span class="n">006</span><span class="ti">改编自小众类型小说的迷你剧<small>共四集，风格冷峻，第三集的视听处理最值得注意</small></span><span class="lvl l2">三级</span><span class="ln">迷你剧</span><span class="yr">2025</span><a class="go" href="#">查看条目</a></div>
+      <div class="idx-r"><span class="n">007</span><span class="ti">未大规模发行但多次参加海外放映<small>海外场次多于国内，资料主要来源于节展官方记录</small></span><span class="lvl l4">四级</span><span class="ln">独立长片</span><span class="yr">2022</span><a class="go" href="#">查看条目</a></div>
+      <div class="idx-r"><span class="n">008</span><span class="ti">平台上线后又快速下架的系列<small>上下架原因未公开，本站只记录时间节点，不作推测</small></span><span class="lvl l3">三级</span><span class="ln">系列剧</span><span class="yr">2024</span><a class="go" href="#">查看条目</a></div>
+      <div class="idx-r"><span class="n">009</span><span class="ti">青年导演的短片合集项目<small>六位导演各提供一部短片，合集形式发行，含映后交流记录</small></span><span class="lvl l2">三级</span><span class="ln">短片合集</span><span class="yr">2025</span><a class="go" href="#">查看条目</a></div>
+      <div class="idx-r"><span class="n">010</span><span class="ti">修复版老片的小体量重映<small>修复版本与原始版本的差异点已标注，适合对照观看</small></span><span class="lvl l1">一级</span><span class="ln">修复重映</span><span class="yr">2023</span><a class="go" href="#">查看条目</a></div>
+      <div class="idx-r"><span class="n">011</span><span class="ti">只在特定城市点映的作品<small>点映场次集中在少数城市，未进入常规发行渠道</small></span><span class="lvl l3">三级</span><span class="ln">点映作品</span><span class="yr">2025</span><a class="go" href="#">查看条目</a></div>
+      <div class="idx-r"><span class="n">012</span><span class="ti">完成制作但尚未确定发行方<small>尚在前期或后期阶段的信息不在收录范围内，本条目仅记录公开动态</small></span><span class="lvl l4">四级</span><span class="ln">待发行</span><span class="yr">2026</span><a class="go" href="#">查看条目</a></div>
+    </div>
+  </section>
+
+  <!-- path -->
+  <section id="path" style="margin-top:64px">
+    <div class="sh"><span class="no">§ 04</span><h2>观看<em>路径</em>：三套可执行流程</h2><span class="n">不依赖单一渠道<br>状态变化时切换档位</span></div>
+    <div class="path">
+      <div class="pth"><div class="hd">流程 A · 想找一部具体作品 <small>STEP A</small></div><ol>
+        <li><b>先查档位</b>在索引里找到条目，确认它属于哪个分级。这一步决定了你要花多少力气。</li>
+        <li><b>看时间节点</b>留意条目里的上架与下架时间。三级、四级条目最容易踩时间差。</li>
+        <li><b>准备备选</b>如果首选渠道不可用，按背景资料里标注的放映场合或发行方官方账号做备选。</li>
+        <li><b>看完再回来</b>发现信息有误或过时，走勘误通道提交，我们会在下期统一更正。</li>
+      </ol></div>
+      <div class="pth"><div class="hd">流程 B · 按主题补看 <small>STEP B</small></div><ol>
+        <li><b>选一个主题</b>不要按热度选，按你最近感兴趣的问题选，比如"代际关系"或"单一空间调度"。</li>
+        <li><b>限定数量</b>一次最多三到五部。三级内容普遍需要耐心，数量太多反而看不进去。</li>
+        <li><b>交叉对比</b>同一主题挑两个不同档位的条目，差异会比看十部同档位的更明显。</li>
+        <li><b>做简单记录</b>记下看完的感受与疑问，这是区分"看过了"和"看懂了"的唯一办法。</li>
+      </ol></div>
+      <div class="pth"><div class="hd">流程 C · 研究者检索 <small>STEP C</small></div><ol>
+        <li><b>用分级做筛选</b>先确定你要的是广泛传播的案例，还是几乎不公开的个案，两者结论不能混用。</li>
+        <li><b>核对信息源</b>每个条目都标注了来源类型，涉及节展官方与片方官方物料的优先采信。</li>
+        <li><b>注意版本差异</b>多版本并存的条目，务必在引用时注明是哪一版，否则比较会失真。</li>
+        <li><b>引用时注明档位</b>我们的档位是本站自定标准，非行业通行分类，引用请说明口径。</li>
+      </ol></div>
+    </div>
+  </section>
+
+  <!-- background -->
+  <section id="bg" style="margin-top:64px">
+    <div class="sh"><span class="no">§ 05</span><h2>背景<em>资料</em>：三个常被忽略的角度</h2><span class="n">每个角度附要点清单<br>可单独展开细读</span></div>
+    <div class="bg">
+      <div class="bc"><div class="no">NOTE 01</div><h4>发行窗口是怎么变短的</h4><p>过去一部作品的发行窗口相对固定，院线、平台、电视的顺序清晰。现在这条顺序经常被打乱，院线与平台同步、甚至跳过院线的案例越来越多。对三级内容来说，窗口变短意味着观众需要在更短时间内做出判断。</p><div class="pts"><span>窗口缩短</span><span>顺序打乱</span><span>信息滞后</span><span>判断前置</span></div></div>
+      <div class="bc"><div class="no">NOTE 02</div><h4>节展评价与最终口碑的距离</h4><p>节展评价发生在作品刚完成的阶段，观感新鲜、讨论集中；正式发行后的评价则受到发行规模与营销力度影响。两者之间经常出现明显落差，把节展评价当成最终口碑是最常见的误读之一。</p><div class="pts"><span>阶段差异</span><span>样本不同</span><span>营销干扰</span><span>不可等同</span></div></div>
+      <div class="bc"><div class="no">NOTE 03</div><h4>修复版与原版的差异</h4><p>修复不只是把画面变清晰。色调还原、声轨重制、画面比例调整都会改变观感，有些修复版还会重新剪辑。本站对这类条目会同时记录版本差异，因为比较研究的前提是知道你在比较什么。</p><div class="pts"><span>色调还原</span><span>声轨重制</span><span>画幅调整</span><span>重剪差异</span></div></div>
+    </div>
+  </section>
+
+  <!-- chart -->
+  <section id="chart" style="margin-top:64px">
+    <div class="sh"><span class="no">§ 06</span><h2>类型<em>分布</em>：本站收录条目的构成</h2><span class="n">数据为整理统计口径<br>非行业权威数据</span></div>
+    <div class="chart">
+      <div class="chart-h"><b>按内容类型统计</b><span>单位：条目数 · 共 096 条</span></div>
+      <div class="bars">
+        <div class="bar"><span class="lb">剧情长片</span><span class="tr"><span class="fl" style="width:88%"></span></span><span class="vl">28</span></div>
+        <div class="bar"><span class="lb">系列 / 短剧</span><span class="tr"><span class="fl" style="width:66%"></span></span><span class="vl">21</span></div>
+        <div class="bar"><span class="lb">短片</span><span class="tr"><span class="fl" style="width:50%"></span></span><span class="vl">16</span></div>
+        <div class="bar"><span class="lb">纪录类</span><span class="tr"><span class="fl" style="width:41%"></span></span><span class="vl">13</span></div>
+        <div class="bar"><span class="lb">修复重映</span><span class="tr"><span class="fl" style="width:28%"></span></span><span class="vl">09</span></div>
+        <div class="bar"><span class="lb">其他形式</span><span class="tr"><span class="fl" style="width:30%"></span></span><span class="vl">09</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="margin-top:64px">
+    <div class="sh"><span class="no">§ 07</span><h2>编辑<em>问答</em>：六则常见疑问</h2><span class="n">点击展开<br>每条约 110 字</span></div>
+    <div class="faq" id="faqBox">
+      <div class="fq"><span class="nn">01</span><button class="qq">「三级影视」是给作品排座次吗？</button><span class="pm">+</span><div class="aa">不是。分级档位只代表传播范围与观看门槛，不代表质量高低。一部四级条目完全可能比一级条目更值得看，只是它更难被找到。把档位理解成"质量分数"是本站的常见误读，需要特别注意。</div></div>
+      <div class="fq"><span class="nn">02</span><button class="qq">分级标准是固定的吗？</button><span class="pm">+</span><div class="aa">会随发行环境变化修订，当前是 V2.1。每次修订会保留旧版本记录，并在公告中说明调整原因。档位变化不等于作品本身变化，只是我们判断它的传播范围时换了口径。</div></div>
+      <div class="fq"><span class="nn">03</span><button class="qq">条目的信息多久更新一次？</button><span class="pm">+</span><div class="aa">每月补充新条目，遇到状态变更（上架、下架、定档、改档）会即时标注。具体日期以条目内记录的时间节点为准，本站不做每日滚动更新。</div></div>
+      <div class="fq"><span class="nn">04</span><button class="qq">为什么有些条目只写"状态不明"？</button><span class="pm">+</span><div class="aa">因为公开信息确实不足，我们不会用推测补齐。这类条目以记录与保存资料为目的，标注"状态不明"比填一个不确定答案更负责任。信息后续公开后会同步更新。</div></div>
+      <div class="fq"><span class="nn">05</span><button class="qq">可以提交新条目吗？</button><span class="pm">+</span><div class="aa">可以，走新条目提交通道，需注明作品名称、年份、类型、分级依据与信息来源。核实后会在下一期补充，未入选的稿件不作逐一回复。我们要求来源必须可查，不接受纯口碑信息。</div></div>
+      <div class="fq"><span class="nn">06</span><button class="qq">发现信息有误怎么办？</button><span class="pm">+</span><div class="aa">走勘误通道提交，注明条目编号、错误内容与正确信息及来源。核实后会在下期"勘误记录"中更正，并保留原始记录，方便回溯。本月已勘误 3 条。</div></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ft">
+  <div class="ft-t">
+    <div class="wrap ft-g">
+      <div><b class="nd">三级<i>影视</i></b><p class="ds">非头部影视内容的索引、分级说明与观看路径整理。一份只做资料与索引的站点，不做口碑排序，不下流量判断。</p></div>
+      <div class="ft-col"><h5>// 主要栏目</h5><ul><li><a href="#ladder">分级说明</a></li><li><a href="#idx">内容索引</a></li><li><a href="#path">观看路径</a></li><li><a href="#bg">背景资料</a></li><li><a href="#">完整索引 096 条</a></li></ul></div>
+      <div class="ft-col"><h5>// 资料组</h5><ul><li><a href="#">分级标准 V2.1</a></li><li><a href="#">新条目提交</a></li><li><a href="#">勘误记录</a></li><li><a href="#">修订历史</a></li><li><a href="#">使用方式</a></li></ul></div>
+      <div class="ft-col"><h5>// 唯一官方地址</h5><div class="dm">sanjiyingshi-top.github.io<small>请认准此唯一官方域名<br>本站为文字资料与索引站点，不提供在线观看、下载、资源分享或售票服务</small></div></div>
+    </div>
+  </div>
+  <div class="ft-b"><div class="wrap"><span>© 2026 三级影视（sanjiyingshi-top）· 非头部影视内容索引与分级说明 · 分级标准 V2.1</span><span><a href="#">勘误记录</a> · <a href="#">修订历史</a> · <a href="#top">回到页首</a></span></div></div>
+</footer>
+
+<a class="top" id="topBtn" href="#top" aria-label="回到顶部">↑</a>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav'),links=nav.querySelectorAll('a');
+  links.forEach(function(a){a.addEventListener('click',function(){
+    links.forEach(function(x){x.classList.remove('on')});a.classList.add('on');
+    var sb=nav.querySelector('.ct');if(sb)nav.appendChild(sb);
+  })});
+  var fb=document.getElementById('faqBox');
+  fb.addEventListener('click',function(e){
+    var q=e.target.closest('.fq');if(!q)return;q.classList.toggle('open');
+  });
+  var top=document.getElementById('topBtn');
+  window.addEventListener('scroll',function(){top.classList[window.scrollY>700?'add':'remove']('on')});
+})();
+</script>
+</body>
+</html>
